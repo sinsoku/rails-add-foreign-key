@@ -1,0 +1,203 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  buttons:
+    new: New
+    edit: Edit
+    save: Save
+    delete: Delete
+    remove_confirm_message: Are you sure you want to delete this item?
+  errors:
+    network: There are currently some network issues, try again later.
+  nav:
+    link: Link
+    reservations: Reservations
+    create_reservation: Create reservation
+    create_personal_reservation: Add personal reservation
+    my_reservations: My reservations
+    find_reservation: Find reservation
+    relations: Relations
+    locations: Locations
+    reports: Reports
+    configurations: Configurations
+    devices: Devices
+    accounts: Accounts
+    categories: Categories
+    buildings: Buildings
+    opening_hours: Opening hours
+  home:
+    online_reservations: Online reservation
+  models:
+    validators:
+      location_asset_timeOverlap: "The asset has already reservations at the requested time %{date_time_start} and %{date_time_end}"
+      location_asset_duration: "The maximum duration of the asset is: %{duration_value} %{duration_type}"
+      location_asset_relation: The relation is disabled and is not allowed to make reservations
+      location_asset_relation_blocked: The relation is blocked and is not allowed to make reservations
+      location_asset_past: The start time needs to be less then 15 minutes in the past
+      location_hours: The location is only opened from %{open} until %{close}
+  relations:
+    label: Relations
+    customer_reference: Customer reference
+    username: Username
+    full_name: Fullname
+    institute: Institute
+    department: Department
+    manager: Backoffice access
+    permissions:
+      label: Permissions
+      buildings: Buildings
+      locations: Locations
+      manager: Manager
+      relations: Relations
+      reservations: Reservations
+    status:
+      label: Status
+      active: Active
+      disabled: Disabled
+    sex:
+      label: Sex
+      male: Male
+      female: Female
+      unkown: Unknown
+    link: Link
+    email: E-mail
+    telephone: Telephone
+    full_address: Address
+    blocks:
+      label: Blocks
+      title: You are currently blocked
+      no_blocks: No blocks found
+      date_start: Start
+      date_end: End
+      reason: Reason
+      reason_explanation: When a person is blocked no reservations can be done until the date has passed
+      creator: Creator
+      progress: Progress
+      days_left: Days left
+      blocked_label: This user is currently blocked. No reservations are allowed.
+
+  reservations:
+    label: Reservations
+    no_active: No active reservations
+    status:
+      label: Status
+      pending: Pending
+      in_use: In use
+      delivery: Delivery
+      returned: Returned
+      canceled: Canceled
+    kind:
+      front_desk: Frontdesk
+      self_service: Self service
+    recurrence_type:
+      once: Once
+      daily: Daily
+      weekly: Weekly
+      two_weekly: Two weekly
+      monthly: Monthly
+    date_time_start: Start
+    date_time_end: End
+    room: Room
+    link: Link
+  assets:
+    full_label: Assets name
+    label: Assets
+    name: Name
+  locations:
+    label_full: Locations name
+    label: Locations
+    label_single: Location
+    name: Name
+    link: Link
+    contact_name: Contact person
+    assets_count: Total assets
+    reservations_active: Active reservations
+    reservations_expired: Expired reservations
+    reservations_expired_zero: No expired reservations
+    reservations_count: Total reservations
+    contact_telephone: Contact telephone
+    contact_whatsapp: Contact Whatsapp
+    contact_email: Contact e-mail
+    default_email_checked: Default email
+    default_email_carbon_copy_frontdesk: CC frontdesk
+    default_email_carbon_copy_online: CC online
+    default_reminder_interval: Reminder interval
+    default_email_carbon_copy_reminder: CC reminder
+    default_email_disclaimer: Disclaimer
+    open_hours_0: Sunday
+    open_hours_1: Monday
+    open_hours_2: Tuesday
+    open_hours_3: Wednesday
+    open_hours_4: Thursday
+    open_hours_5: Friday
+    open_hours_6: Saturday
+    default_building: Default building
+    buildings: Buildings
+    online_institutes: Online institutes
+    assets:
+      label: Assets
+      name: Name
+      available: Available
+      registration_label: Registration label
+      reservation_option: Reservation availablility
+      reservation_options:
+        front_desk: Frontdesk
+        self_service: Self service
+        both: Frontdesk and Self service
+      fine: Fine
+      duration: Duration
+      duration_type: Duration type
+      duration_types:
+        hour:
+          zero: Hours
+          one: Hour
+          other: Hours
+        day:
+          zero: Days
+          one: Day
+          other: Days
+        week:
+          zero: Weeks
+          one: Week
+          other: Weeks
+      duration_value: Duration value
+      link: Link
+    categories:
+      label: Categories
+      name: Name
+      assets_count: Asset count
+      link: Link
+  buildings:
+    label_full: Building name
+    label: Buildings
+    name: Name
+    link: Link
