@@ -25,4 +25,6 @@ ActiveRecord::Schema.define(version: 2019_03_14_135126) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "location_categories", "locations"
 end
